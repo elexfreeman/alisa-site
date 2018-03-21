@@ -1,0 +1,35 @@
+<% include base/head %>
+<div class="docs-container off-canvas off-canvas-sidebar-show" ng-app="app.catalog" ng-controller="CatalogController">
+    <% include base/navbar %>
+
+    <div id="content" class="docs-content off-canvas-content">
+        <div class="main-container">
+            <h2 class="s-title">
+                <a href="#grid" class="anchor" aria-hidden="true">#</a>
+                Интернет магазин экологичекий косметики <span ng-bind="name"></span>
+            </h2>
+            <div class="docs-note">
+                <p>Layout includes flexbox based responsive grid system with 12 columns. </p>
+            </div>
+
+            <h3 class="s-title">Популярные товары</h3>
+            <div class="columns ">
+                <% popProducts.forEach(function(p) { %>
+                    <% include modules/product_item %>
+                <% }); %>
+            </div>
+
+            <h3 class="s-title">Категории</h3>
+            <div class="columns ">
+                <% categories.forEach(function(c) { %>
+                    <% include modules/category_item %>
+                <% }); %>
+            </div>
+        </div>
+        <% include base/docfooter %>
+    </div>
+</div>
+
+<script src="/bundle.js"></script>
+
+<% include base/footer %>

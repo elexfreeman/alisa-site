@@ -1,0 +1,33 @@
+.card {
+  border: 0.05rem solid #d6cdff;
+}
+
+.btn {
+  border-radius: 0.5em;
+}
+
+.main-container h1.s-title {
+  color: $primary-color;
+  font-size: 1.5em;
+  padding-top: 2rem;
+  text-transform: uppercase !important;
+}
+
+label.accordion-header, .accordion .accordion-header {
+  color: $primary-color !important;
+  text-transform: uppercase !important;
+  font-size: .65rem;
+  font-weight: 600;
+}
+
+.docs-sidebar .docs-brand h1.logo-font {
+  font-family: $rouse-one-font;
+  font-size: 2rem;
+  margin-left: 0;
+}
+
+.breadcrumb .breadcrumb-item:not(:first-child)::before {
+  color: $primary-color;
+  content: "/";
+  padding-right: 0.4rem;
+}

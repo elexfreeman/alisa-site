@@ -1,0 +1,22 @@
+
+
+// Define variables to override default ones
+$primary-color: rgb(151, 32, 106);
+$dark-color: #6b6b6b;
+
+$rouse-one-font: 'Bilbo Swash Caps', cursive;
+
+@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps");
+
+
+// Import full Spectre source code
+@import "node_modules/spectre.css/src/spectre";
+@import "node_modules/spectre.css/src/spectre-exp";
+@import "node_modules/spectre.css/src/spectre-icons";
+@import "node_modules/spectre.css/docs/src/docs";
+
+@import "add.scss";
+@import "main.scss";
+@import "nav-bar.scss";
+
+

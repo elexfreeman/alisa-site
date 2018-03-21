@@ -1,0 +1,70 @@
+<div class="docs-navbar">
+    <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
+        <i class="icon icon-menu"></i>
+    </a>
+    <!-- <a href="/login"  class="btn btn-primary">Вход</a> -->
+</div>
+
+<div id="sidebar" class="docs-sidebar off-canvas-sidebar">
+    <div class="docs-brand">
+        <a href="/" class="docs-logo">
+            <h1 class="logo-font">Rouse.One</h1>
+        </a>
+    </div>
+
+    <div class="docs-nav">
+        <div class="phone">+7 963 963 96 66</div>
+        <div class="accordion-container">
+            <div class="accordion">
+                <a href="/" class="accordion-header c-hand">
+                    На главную
+                </a>
+            </div>
+            <div class="accordion">
+                <a class="accordion-header c-hand">
+                    Корзина
+                </a>
+            </div>
+            <div class="accordion">
+                <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden checked>
+                <label class="accordion-header c-hand" for="docs-accordion-1">
+                    Категории
+                </label>
+                <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                        <% categories.forEach(function(cc) { %>
+                        <li class="menu-item">
+                            <a href="/category/<%= cc.url %>"><%= cc.caption %></a>
+                        </li>
+                        <% }); %>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <a href="/about" class="accordion-header c-hand">
+                    О нас
+                </a>
+            </div>
+
+            <div class="accordion">
+                <a href="/about" class="accordion-header c-hand">
+                   Отзывы
+                </a>
+            </div>
+
+            <div class="accordion">
+                <a class="accordion-header c-hand">
+                    Как купить
+                </a>
+            </div>
+            <div class="accordion">
+                <a class="accordion-header c-hand">
+                    Доставка
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a class="off-canvas-overlay" href="#close"></a>

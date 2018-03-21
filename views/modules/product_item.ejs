@@ -1,0 +1,20 @@
+<div class="column col-4 col-lg-4 col-md-4 col-sm-12">
+    <div class="card">
+        <div class="card-image">
+            <img src="<%= p.main_img %>" class="img-responsive"/>
+        </div>
+        <div class="card-header">
+            <div class="card-title h5">
+                <%= p.caption %>
+            </div>
+        </div>
+        <div class="card-body">
+        </div>
+        <div class="card-footer product-footer">
+            <div class="product-price">
+                <%= p.price %> руб.
+            </div>
+            <a href="/product/<%= p.url %>" class="btn btn-primary">Подробнее</a>
+        </div>
+    </div>
+</div>
