@@ -27,6 +27,8 @@ router.get('/', function (req, res, next) {
         let description = 'Rouse.One - Интернет магазин экологичекий косметики';
         let keywords = '';
 
+        product.description = product.description.replace(/\r\n|\r|\n/g,"<br />");
+
         res.render('product', {
             title: title
             , description: description

@@ -1,27 +1,27 @@
 <% include base/head %>
-    <div class="docs-container off-canvas off-canvas-sidebar-show">
-        <% include base/navbar %>
-            <div id="content" class="docs-content off-canvas-content">
-                <div class="main-container">
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="/">Главная</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a> <%=category.caption %></a>
-                        </li>                        
-                    </ul>
-                    <h1 class="s-title">
-                        <a href="#grid" class="anchor" aria-hidden="true">#</a>
-                        <%=category.caption %>
-                    </h1>
-                    <div class="columns ">
-                            <% category.products.forEach(function(p) { %>
-                                 <% include modules/product_item %>
-                            <% }); %>
-                        </div>
-                </div>
-                <% include base/docfooter %>
+<div class="docs-container off-canvas off-canvas-sidebar-show">
+    <% include base/navbar %>
+    <div id="content" class="docs-content off-canvas-content">
+        <div class="main-container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a> <%=category.caption %></a>
+                </li>
+            </ul>
+            <h1 class="s-title">
+                <a class="anchor" aria-hidden="true"></a>
+                <%=category.caption %>
+            </h1>
+            <div class="columns ">
+                <% category.products.forEach(function(p) { %>
+                <% include modules/product_item %>
+                <% }); %>
             </div>
+        </div>
+        <% include base/docfooter %>
     </div>
-    <% include base/footer %>
+</div>
+<% include base/footer %>

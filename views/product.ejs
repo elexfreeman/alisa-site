@@ -15,9 +15,19 @@
                         <a href="#grid" class="anchor" aria-hidden="true">#</a>
                         <%=product.caption %>
                     </h1>
+                    <div class="columns">
+                        <div class="column col-xs-3">
+                            <img style="width: 400px" id="zoom_01" data-zoom-image="<%=product.main_img %>" src="<%=product.main_img %>">
+                        </div>
+                        <div class="column col-xs-3"><%-product.description %></div>
+
+                    </div>
+
 
                 </div>
                 <% include base/docfooter %>
             </div>
     </div>
+<script src="/common.js"></script>
+<script src="/product.js"></script>
     <% include base/footer %>
